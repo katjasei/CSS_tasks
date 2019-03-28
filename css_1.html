@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Positioning Items</title>
+    <meta charset="UTF-8">
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            padding-right: 40px;
+            padding-left: 40px;
+        }
+        .box {
+
+            color: aliceblue;
+            margin:0;
+            padding:10px;
+
+        }
+
+        p {
+
+        }
+        div {
+
+        }
+
+        #red {
+            background-color: lightpink;
+            color: black;
+            height:100px;
+        }
+
+        #green {
+
+            float:left;
+            margin-top: 10px;
+            width: 110px;
+            padding: 0 10px;
+            color: darkolivegreen;
+        }
+
+        #blue {
+
+            background-color: #B2D6FF;
+            color: black;
+            margin-left: 130px; /* Отступ слева */
+            padding: 10px;
+
+
+        }
+        #yellow {
+            background-color: lemonchiffon;
+            color: black;
+            clear:both;
+            max-width: 100%;
+        }
+        #orchid {
+            background-color: plum;
+            overflow: hidden;
+        }
+
+        .clear { clear: both;}
+
+        /* img */
+        img {
+            max-width: 100%;
+            min-width: 10%;
+            width: 300px;
+            height: 200px;
+            margin-right: 10px;
+            opacity: 0.8;
+
+        }
+
+        /* container */
+        .container1 {
+
+            max-width: 1000px; /* Ширина слоя */
+            margin: 0 auto; /* Выравнивание по центру */
+            background: lightgreen;
+
+        }
+
+        .container{
+            position: relative;
+            float:left;
+        }
+
+        .column {
+            float: left;
+            overflow: auto;
+            width: 31%;
+            margin: 20px 1.15%;
+            height: 160px;
+            background-color: #B2D6FF;    /* Medium blue */
+        }
+
+        .name{
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+            font-size: 18px;
+            color: darkblue;
+        }
+
+        .center{
+            text-align: center;
+            color: brown;
+        }
+        li{
+            display: inline;
+            padding: 10px;
+        }
+
+        .avatar {
+            float: left;
+            width: 60px;
+            height: 60px;
+            margin: 25px;
+            border-radius: 40px;
+            background-color: #D6E9FE;
+        }
+
+        .username {
+            margin-top: 30px;
+            color:black;
+
+        }
+
+        .comment {
+            margin: 10px;
+            overflow: hidden;
+            color:black;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="box" id="red">
+    <h1 class = "center">Sights in Helsinki</h1>
+</div>
+<div class="box" id="yellow">
+    <ul>
+        <li><a href>Suomenlinna</a></li>
+        <li><a href>Helsinki Cathedral</a></li>
+        <li><a href>Senate Square</a></li>
+        <li><a href>Old Market Hall</a></li>
+        <li><a href>Helsinki Zoo</a></li>
+    </ul>
+
+</div>
+
+<div class='container1'>
+
+    <div class="box" id="green">
+        <h3>Suomenlinna</h3>
+    </div>
+    <div class="box" id="blue">
+        <div class ="container">
+            <img src="https://www.visitfinland.com/app/uploads/Suomenlinna_bastione_3643-1024x682.jpg" class="image">
+            <div class="name">Suomenlinna Sea Fortress</div>
+        </div>
+
+        <p>A Unesco World Heritage Site, Suomenlinna sea fortress is one of the most popular attractions in Finland for a reason.
+            Suomenlinna was shaped by three historic eras when it helped to defend first Sweden, then Russia and ultimately Finland.
+            With its museums, events and restaurants Suomenlinna offers a unique experience for visitors of all ages.
+            The fortress is easily accessed all year by public transport (HSL) ferry from the Market Square.
+        </p>
+        <p>In summer also by JT-Line ferry. In summer guided walking tours are organized daily in Finnish, Swedish, English and Russian, occasionally also Chinese.
+        </p>
+        <p class = "clear">
+            During the winter season, tours are available on weekends in English, in spring also in Russian.
+            The tours start from the Suomenlinna Centre and last approx. one hour.
+            Tickets can be bought at the Suomenlinna Centre or online.</p>
+
+    </div>
+</div>
+<div class="box" id="orchid">
+    <div class='column'>
+        <div class='avatar'></div>
+        <h3 class='username'> Katja Seikkinen</h3>
+        <p class='comment'>Student of the Metropolia University of Applied Science </p>
+    </div>
+    <div class='column'></div>
+    <div class='column'></div>
+</div>
+
+</body>
+</html>
